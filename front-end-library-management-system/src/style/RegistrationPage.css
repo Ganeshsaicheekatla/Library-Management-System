@@ -1,0 +1,64 @@
+.registration-form-container {
+   margin-top: ;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    box-sizing: border-box;
+  }
+  
+  .registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Ensure inputs and selects have the same width and styling */
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Adjust the form layout based on sidebar */
+  .with-sidebar .registration-form-container {
+    margin-left: 220px; /* Adjust as per your sidebar width */
+  }
+  
+  .without-sidebar .registration-form-container {
+    margin-left: 0;
+  }
+  

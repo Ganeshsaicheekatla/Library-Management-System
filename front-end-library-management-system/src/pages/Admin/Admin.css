@@ -1,0 +1,33 @@
+/* Container for the entire dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    overflow: hidden;
+  }
+  
+  /* Wrapper for sidebar and main content */
+  .content-wrapper {
+    display: flex;
+    flex: 1;
+    margin-top: 600px; /* Adjust based on the height of the Navbar */
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    transition: margin-left 0.3s ease;
+    overflow-y: auto;
+  }
+  
+  .with-sidebar > * {
+    margin-left: 250px; /* Width of the sidebar when open */
+  }
+  
+  .without-sidebar {
+    margin-left: 0;
+  }
+  

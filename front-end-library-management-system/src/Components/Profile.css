@@ -1,0 +1,70 @@
+/* Profile.css */
+.user-profile {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 100px;
+}
+
+.user-profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-profile-header h2 {
+  margin: 0;
+}
+
+.edit-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.user-info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-info-row label {
+  width: 150px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.user-info-row input {
+  flex-grow: 1;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.user-info-row span {
+  flex-grow: 1;
+  padding: 6px 10px;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

@@ -1,0 +1,211 @@
+
+.pending-icon {
+  display: inline-block;
+  color: #3498db;
+  font-size: 0.9rem;
+}
+
+.book-request:disabled {
+  background-color: #95a5a6; /* Gray for disabled button */
+  cursor: not-allowed;
+}
+.book-request {
+  background-color: #3498db; /* Blue for Request */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.book-request:hover {
+  background-color: #2980b9;
+}
+
+
+
+/* Book List Layout */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Adjust layout when sidebar is open or closed */
+.book-list.with-sidebar {
+  margin-left: 250px; /* When sidebar is open, content gets shifted to the right */
+}
+
+.book-list.without-sidebar {
+  margin-left: 0; /* Full width when sidebar is closed */
+}
+
+/* Individual Book Card Styling */
+.book-card {
+  width: 220px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Book Image */
+.book-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Book Details */
+.book-details {
+  padding: 15px;
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.book-author {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+
+.no-image {
+  width: 100%;
+  height: 150px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Book Details Styling */
+.book-title, .book-author, .book-code, .book-quantity, .book-price, .book-floor, .book-shulf, .book-room {
+  font-size: 10px;
+  text-align: left;
+  padding-left:15px ;
+  color: #555;
+  margin-bottom: 5px; /* Space between each property */
+  font-family: 'Verdana', sans-serif;
+}
+
+/* Hover effect on card */
+.book-card:hover .book-title,
+.book-card:hover .book-author,
+.book-card:hover .book-code,
+.book-card:hover .book-quantity,
+.book-card:hover .book-price,
+.book-card:hover .book-floor,
+.book-card:hover .book-shluf,
+.book-card:hover .book-roomNo {
+  color: #333;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .book-card {
+    width: 100%; /* Full width cards on mobile */
+  }
+}
+
+
+/* Responsiveness for Tablets and Mobile */
+@media (max-width: 1024px) {
+  .book-card {
+    width: 45%; /* Cards take up 45% of width on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .book-card {
+    width: 100%; /* Full-width cards on mobile */
+    margin-bottom: 20px; /* Space between cards */
+  }
+
+  .book-list {
+    justify-content: center; /* Center the books */
+  }
+}
+
+@media (max-width: 480px) {
+  .book-title {
+    font-size: 16px; /* Smaller title font on small screens */
+  }
+
+  .book-author {
+    font-size: 12px; /* Smaller author font on small screens */
+  }
+
+  .book-code,
+  .book-quantity,
+  .book-price {
+    font-size: 10px; /* Smaller details font on small screens */
+  }
+
+  .book-image {
+    height: 120px; /* Smaller image on mobile */
+  }
+}
+
+
+.book-update {
+  background-color: #007bff;
+  color: white;
+}
+
+button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 4px;
+}
+.book-delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.admin-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.pending-icon {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.book-card label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.book-card input {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
