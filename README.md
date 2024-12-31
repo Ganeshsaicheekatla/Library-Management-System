@@ -1,4 +1,4 @@
-# Book Management System
+# Library Management System
 
 This project is a full-stack application developed using **Spring Boot** for the backend and **ReactJS** for the frontend. It provides a comprehensive API for managing a library's book collection, user accounts, and associated operations, with authentication and authorization via JWT.
 
